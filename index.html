@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hamid Raza Bajwa</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' fill='%23FAFAFA'/><text x='32' y='42' font-family='IBM Plex Sans, sans-serif' font-weight='700' font-size='26' fill='%23B45309' text-anchor='middle'>HB</text></svg>">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --text: #1A1A1A;
+    --bg: #FAFAFA;
+    --accent: #B45309;
+    --accent-tint: #FBEFD9;
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0;
+    height: 100%;
+    background: var(--bg);
+    color: var(--text);
+  }
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+  }
+  main {
+    max-width: 560px;
+    width: 100%;
+  }
+  h1 {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 700;
+    font-size: clamp(28px, 5vw, 40px);
+    line-height: 1.15;
+    margin: 0 0 18px 0;
+    letter-spacing: -0.01em;
+  }
+  p.claim {
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--text);
+    margin: 0 0 32px 0;
+    border-left: 3px solid var(--accent);
+    padding-left: 16px;
+    background: var(--accent-tint);
+    padding: 14px 16px;
+  }
+  a.cta {
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--accent);
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+  }
+  a.cta:hover { text-decoration: underline; }
+  a.cta svg { flex-shrink: 0; }
+  .status {
+    margin-top: 48px;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 12px;
+    color: #8a8a8a;
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    main { animation: none; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <h1>Hamid Raza Bajwa</h1>
+  <p class="claim">A high score means nothing until you know what the model peeked at.</p>
+  <a class="cta" href="#" aria-disabled="true">
+    <svg width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M1 5H15M15 5L10.5 1M15 5L10.5 9" stroke="#B45309" stroke-width="1.5" stroke-linecap="square"/>
+    </svg>
+    See the leakage check (coming soon)
+  </a>
+  <div class="status">Site under construction — Weeks 5&ndash;8</div>
+</main>
+</body>
+</html>
