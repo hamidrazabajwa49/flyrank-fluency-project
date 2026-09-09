@@ -63,10 +63,41 @@
   a.cta:hover { text-decoration: underline; }
   a.cta svg { flex-shrink: 0; }
   .status {
-    margin-top: 48px;
+    margin-top: 40px;
     font-family: 'IBM Plex Mono', monospace;
     font-size: 12px;
     color: #8a8a8a;
+  }
+  p.positioning {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 15px;
+    line-height: 1.6;
+    margin: 0 0 20px 0;
+    color: var(--text);
+  }
+  .links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    margin: 28px 0 0 0;
+    padding-top: 20px;
+    border-top: 1px solid #e5e0d8;
+  }
+  .links a {
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--accent);
+    text-decoration: none;
+  }
+  .links a:hover { text-decoration: underline; }
+  .future {
+    margin-top: 32px;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 13px;
+    color: #8a8a8a;
+    border-left: 3px solid #e5e0d8;
+    padding-left: 14px;
   }
   @media (prefers-reduced-motion: no-preference) {
     main { animation: none; }
@@ -76,6 +107,7 @@
 <body>
 <main>
   <h1>Hamid Raza Bajwa</h1>
+  <p class="positioning">CS student building ML systems, focused on honest evaluation over inflated metrics.</p>
   <p class="claim">A high score means nothing until you know what the model peeked at.</p>
   <a class="cta" href="#" aria-disabled="true">
     <svg width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -83,6 +115,12 @@
     </svg>
     See the leakage check (coming soon)
   </a>
+  <nav class="links">
+    <a href="https://www.linkedin.com/in/hamidrazabajwa49" target="_blank" rel="noopener">LinkedIn</a>
+    <a href="https://github.com/hamidrazabajwa49" target="_blank" rel="noopener">GitHub</a>
+    <a href="https://docs.google.com/document/d/16cEpvJzC6MGDTxFuHA3pv5Ww-EN6SY94/edit?usp=sharing" target="_blank" rel="noopener">CV</a>
+  </nav>
+  <div class="future">Capstone work and future posts &mdash; coming soon.</div>
   <div class="status">Site under construction — Weeks 5&ndash;8</div>
 </main>
 </body>
