@@ -5,6 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Hamid Raza Bajwa</title>
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' fill='%23FAFAFA'/><text x='32' y='42' font-family='IBM Plex Sans, sans-serif' font-weight='700' font-size='26' fill='%23B45309' text-anchor='middle'>HB</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
   :root {
@@ -16,7 +18,7 @@
   * { box-sizing: border-box; }
   html, body {
     margin: 0;
-    height: 100%;
+    min-height: 100vh;
     background: var(--bg);
     color: var(--text);
   }
@@ -50,7 +52,7 @@
     background: var(--accent-tint);
     padding: 14px 16px;
   }
-  a.cta {
+  .cta {
     font-family: 'IBM Plex Mono', monospace;
     font-weight: 500;
     font-size: 14px;
@@ -61,7 +63,7 @@
     gap: 6px;
   }
   a.cta:hover { text-decoration: underline; }
-  a.cta svg { flex-shrink: 0; }
+  .cta svg { flex-shrink: 0; }
   .status {
     margin-top: 40px;
     font-family: 'IBM Plex Mono', monospace;
@@ -89,6 +91,11 @@
     font-size: 14px;
     color: var(--accent);
     text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+    padding: 4px 2px;
+    box-sizing: border-box;
   }
   .links a:hover { text-decoration: underline; }
   .future {
@@ -109,12 +116,12 @@
   <h1>Hamid Raza Bajwa</h1>
   <p class="positioning">CS student building ML systems, focused on honest evaluation over inflated metrics.</p>
   <p class="claim">A high score means nothing until you know what the model peeked at.</p>
-  <a class="cta" href="#" aria-disabled="true">
+  <span class="cta" aria-disabled="true">
     <svg width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M1 5H15M15 5L10.5 1M15 5L10.5 9" stroke="#B45309" stroke-width="1.5" stroke-linecap="square"/>
     </svg>
     See the leakage check (coming soon)
-  </a>
+  </span>
   <nav class="links">
     <a href="https://www.linkedin.com/in/hamidrazabajwa49" target="_blank" rel="noopener">LinkedIn</a>
     <a href="https://github.com/hamidrazabajwa49" target="_blank" rel="noopener">GitHub</a>
